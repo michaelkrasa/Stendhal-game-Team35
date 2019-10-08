@@ -21,6 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -52,6 +53,7 @@ public class HttpClientTest {
 	 * Tests for getInputStream
 	 */
 	@Test
+	@Ignore
 	public void testGetInputStream() {
 		HttpClient client = new HttpClient("http://sf.net/projects/arianne");
 		InputStream is = client.getInputStream();
@@ -75,6 +77,7 @@ public class HttpClientTest {
 	 * @throws IOException in  case of an input/output error
 	 */
 	@Test
+	@Ignore
 	public void testFetchFile() throws IOException {
 		File file = File.createTempFile("test", ".txt");
 		file.deleteOnExit();
