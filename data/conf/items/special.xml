@@ -37,8 +37,7 @@
       <slot name="content"/>
       <slot name="bag"/>
       <slot name="trade"/>
-      <slot name="lhand"/>
-      <slot name="rhand"/>
+      <slot name="keyring"/>
     </equipable>
   </item>
 
