@@ -35,17 +35,10 @@ public class SummonPetScrollsTest {
 		testSummonScroll.dropBlank(testPlayer);
 		
 		String newDescribe = testDragon.describe();
+
 		
 		assertEquals("checks that weights etc will be the same",initialDescribe, newDescribe);
-		
-		
-		
-		/*
-		initialPet
-		returnedPet
-		scroll
-		world
-		*/
+	
 	}
 
 }

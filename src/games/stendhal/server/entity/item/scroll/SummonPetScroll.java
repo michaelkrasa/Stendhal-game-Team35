@@ -21,10 +21,10 @@ import org.apache.log4j.Logger;
 
 import games.stendhal.server.core.engine.SingletonRepository;
 import games.stendhal.server.core.engine.StendhalRPZone;
-import games.stendhal.server.entity.creature.BabyDragon;
-import games.stendhal.server.entity.creature.Cat;
+//import games.stendhal.server.entity.creature.BabyDragon;
+//import games.stendhal.server.entity.creature.Cat;
 import games.stendhal.server.entity.creature.Pet;
-import games.stendhal.server.entity.creature.PurpleDragon;
+//import games.stendhal.server.entity.creature.PurpleDragon;
 //import games.stendhal.server.entity.creature.Sheep;
 //import games.stendhal.server.core.engine.transformer.PlayerTransformer;
 import games.stendhal.server.entity.item.Item;
@@ -32,6 +32,7 @@ import games.stendhal.server.entity.item.Item;
 //import games.stendhal.server.core.rule.EntityManager;
 //import games.stendhal.server.entity.creature.Creature;
 import games.stendhal.server.entity.player.Player;
+import games.stendhal.server.entity.player.PlayerPetManager;
 
 /**
  * Represents a creature summon pet scroll.
@@ -99,8 +100,9 @@ public class SummonPetScroll extends Scroll {
 		}
 
 		// create it
-		Pet pet = null;
-		switch (type) {
+		PlayerPetManager playerPetManager = new PlayerPetManager(player);
+		Pet pet = playerPetManager.retrievePet();
+		/*switch (type) {
 		case "cat":
 			pet = new Cat(player);
 			break;
@@ -114,7 +116,8 @@ public class SummonPetScroll extends Scroll {
 			// Didn't match a known pet type
 			player.sendPrivateText("This scroll does not seem to work. You should talk to the magician who created it.");
 			return false;
-		}
+		
+		}*/
 
 		pet.setPosition(player.getX(), player.getY() + 1);
 		dropBlank(player);
