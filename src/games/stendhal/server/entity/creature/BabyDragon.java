@@ -47,12 +47,13 @@ public class BabyDragon extends Pet {
 		DEF = 40;
 		XP = 100;
 		baseSpeed = 0.9;
-
+		
 		setAtk(ATK);
 		setDef(DEF);
 		setXP(XP);
 		setBaseHP(HP);
 		setHP(HP);
+		
 	}
 
 	public static void generateRPClass() {
@@ -81,6 +82,7 @@ public class BabyDragon extends Pet {
 		setUp();
 		setRPClass("baby_dragon");
 		put("type", "baby_dragon");
+		setWeight(1);
 
 		if (owner != null) {
 			// add pet to zone and create RPID to be used in setPet()
@@ -104,7 +106,6 @@ public class BabyDragon extends Pet {
 
 		setRPClass("baby_dragon");
 		put("type", "baby_dragon");
-
 		update();
 	}
 

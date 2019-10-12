@@ -13,7 +13,7 @@
 package games.stendhal.server.entity.creature;
 
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -71,5 +71,16 @@ public class BabyDragonTest {
 		final BabyDragon drako = new BabyDragon(template, PlayerTestHelper.createPlayer("bob"));
 		assertThat(drako.getFoodNames(), is(foods));
 	}
-
+	
+	/**
+	 * Tests dragons weight when its spawned, owned by a player that is in an RPZone
+	 */
+	@Test
+	public void testBabyDragonWeight() {
+		final StendhalRPZone zone = new StendhalRPZone("zone");
+		final Player bob = PlayerTestHelper.createPlayer("bob");
+		zone.add(bob);
+		final BabyDragon drako = new BabyDragon();
+		assertEquals(drako.getWeight(), 1);
+	}	
 }
