@@ -103,6 +103,8 @@ public class PurpleDragon extends Pet {
 	public PurpleDragon(final RPObject object, final Player owner) {
 
 		super(object, owner);
+		
+		setUp();
 
 
 		setRPClass("purple_dragon");

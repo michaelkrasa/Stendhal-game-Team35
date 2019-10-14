@@ -74,7 +74,7 @@ public class SummonPetScroll extends Scroll {
 	 * @return true iff summoning was successful
 	 */
 	@Override
-	protected boolean useScroll(final Player player) {
+	public boolean useScroll(final Player player) {
 		final StendhalRPZone zone = player.getZone();
 
 		if (zone.isInProtectionArea(player)) {
