@@ -22,7 +22,7 @@ import marauroa.common.game.RPSlot;
 public class PlayerPetManager {
 	private final Player player;
 
-	PlayerPetManager(final Player player) {
+	public PlayerPetManager(final Player player) {
 		this.player = player;
 	}
 

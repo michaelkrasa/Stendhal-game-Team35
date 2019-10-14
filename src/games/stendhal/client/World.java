@@ -16,7 +16,7 @@ public final class World {
 
 	private static World instance = new World();
 
-	private World() {}
+	public World() {}
 
 	public static World get() {
 		return instance;
