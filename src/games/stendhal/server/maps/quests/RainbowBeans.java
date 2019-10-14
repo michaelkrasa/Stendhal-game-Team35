@@ -194,7 +194,7 @@ public class RainbowBeans extends AbstractQuest {
 			ConversationPhrases.NO_MESSAGES,
 			null,
 			ConversationStates.ATTENDING,
-			"Aight, ain't for everyone. Anythin else you want, you say so.",
+			"Alright, ain't for everyone. Anythin else you want, you say so.",
 			null);
 
 		// player says 'deal' or asks about beans when NPC is ATTENDING, not
