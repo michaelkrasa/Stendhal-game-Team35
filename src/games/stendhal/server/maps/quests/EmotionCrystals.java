@@ -84,6 +84,8 @@ public class EmotionCrystals extends AbstractQuest {
 
 	private static final int OFFSET_TIMESTAMPS = 1;
 	private static final int OFFSET_SUCCESS_MARKER = 6;
+	
+	public static List<String> gatheredCrystals = new ArrayList<String>();
 
 	@Override
 	public List<String> getHistory(final Player player) {
@@ -103,11 +105,10 @@ public class EmotionCrystals extends AbstractQuest {
 			}
 		}
 
-		List<String> gatheredCrystals = new ArrayList<String>();
 		boolean hasAllCrystals = true;
 
 		for (String color : crystalColors) {
-			if (player.isEquipped(color + " emotion crystal")) {
+			if (!gatheredCrystals.contains(color + " emotion crystal") && player.isEquipped(color + " emotion crystal")) {
 				gatheredCrystals.add(color + " emotion crystal");
 			} else {
 				hasAllCrystals = false;
