@@ -408,6 +408,7 @@ public final class ShopList {
 		shops.add("buyfishes", "surgeonfish", 15);
 		shops.add("buyfishes", "trout", 45);
 		shops.add("buyfishes", "cod", 10);
+		shops.add("buyfishes", "red lionfish", 120);
 
 		// semos trading - swords)
 		shops.add("tradeswords", "dagger", 10);
