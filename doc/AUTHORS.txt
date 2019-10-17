@@ -167,6 +167,18 @@ Authors of Stendhal are:
   · Bugs fixer
   - Diligent Dodo (aka Soniccuz)
   · Artist (mimic, dodo, suba diving concepts)
+  Declan Kehoe
+  · Bugs fixer
+  Jack Butterfield
+  · Bugs fixer
+  Alexandru Tentes
+  · Bugs fixer
+  Zhaoyu Zhang
+  · Bugs fixer
+  Alan Biju Thomas
+  · Bugs fixer
+  Michael Krasa
+  · Bugs fixer
 
 We also thank many who have contributed to Stendhal by providing patches,
 which the rest of the team commited on their behalf. 

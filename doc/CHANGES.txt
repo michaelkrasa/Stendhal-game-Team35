@@ -1,6 +1,19 @@
 Changelog
 ---------
 ---------
+1.31
+*feature*
+- fishmonger in Kirdneh now buys red lion fish
+
+*fixes*
+- emotion crystal quest log now updates correctly
+- the rainbow beans seller NPC dialogue is fixed
+- summoned pets now keep their properties
+- baby dragons now have the correct weight
+- mithril clasp item can now be equipped to a keyring 
+
+
+
 1.30
 *world*
 - added Deniran Caves
