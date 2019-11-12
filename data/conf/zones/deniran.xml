@@ -133,22 +133,6 @@
 		</attributes>
 
 	</zone>
-	
-	<zone name="0_deniran_se" level="0" x="499232" y="500128"
-		file="Level 0/deniran/deniran_se.tmx">
-
-		<attributes>
-			<parameter name="color_method">time</parameter>
-			<parameter name="weather">varying</parameter>
-		</attributes>
-
-        <!-- door outside -->
-        <portal x="53" y="83" ref="deniran_school_of_computer_science">
-			<destination zone="int_deniran_school_of_computer_science" ref="entrance" />
-			<attribute name="move.continuous" />
-		</portal>
-		
-	</zone>
 
 
 	<zone name="0_deniran_river_s" level="0" x="499232" y="500256"
@@ -203,6 +187,11 @@
 			<parameter name="color_method">time</parameter>
 			<parameter name="weather">varying</parameter>
 		</attributes>
+		<!-- door outside -->
+		<portal x="53" y ="82" ref="school_inner_entrance">
+		    <destination zone="int_deniran_school_of_computer_science" ref="school_outter_entrance" />
+		    <attribute name="move.continuous" />
+		</portal>
 
 	</zone>
 
@@ -676,10 +665,10 @@
 
 	</zone>
 	
-	<zone name="int_deniran_school_of_computer_science" file="interiors/deniran/school_of_computer_science.tmx">
+	<zone name="int_deniran_school_of_computer_science" file="interiors/semos/school_0.tmx">
     
-        <portal x="49" y="57" ref="entrance">
-            <destination zone="0_deniran_se" ref="deniran_school_of_computer_science_entrance" />
+        <portal x="20" y="38" ref="school_outter_entrance">
+            <destination zone="0_deniran_se" ref="school_inner_entrance" />
 			<attribute name="move.continuous" />
         </portal>
         
