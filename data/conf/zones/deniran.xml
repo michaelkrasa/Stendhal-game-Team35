@@ -678,8 +678,8 @@
 	
 	<zone name="int_deniran_school_of_computer_science" file="interiors/deniran/school_of_computer_science.tmx">
     
-        <portal x="49" y="57" ref="deniran_school_of_computer_science_entrance">
-            <destination zone="0_deniran_se" ref="entrance" />
+        <portal x="49" y="57" ref="entrance">
+            <destination zone="0_deniran_se" ref="deniran_school_of_computer_science_entrance" />
 			<attribute name="move.continuous" />
         </portal>
         

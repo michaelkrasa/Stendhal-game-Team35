@@ -45,13 +45,15 @@ public class SchoolNPCTest extends ZonePlayerAndNPCTestImpl {
 		final Engine en = npc.getEngine();
 
 		assertTrue(en.step(player, "hello"));
-		assertEquals("Hi. I'm poopular Java lecturer,"
-				+ " and has been head-hunted by the new Deniran"
-				+ " Insitute of Technology to set up a new School"
-				+ " of Computer Science.", getReply(npc));
-
+		assertEquals("Welcome to the new school of computer science! A school about #computers and their science!", getReply(npc));
+		assertTrue(en.step(player, "job"));
+		assertEquals("My whole aim is to educate people about computer science, but right now I have no students signed up!", getReply(npc));
+		assertTrue(en.step(player, "help"));
+		assertEquals("If I could only find some students, i'd even answer any of their questions.", getReply(npc));
+		assertTrue(en.step(player, "computers"));
+		assertEquals("Yeah! Computers! I teach people about them.", getReply(npc));
 		assertTrue(en.step(player, "bye"));
-		assertEquals("Bye, enjoy your day!", getReply(npc));
+		assertEquals("Just gonna wiggle my eyebrows at you and say goodbye for now.", getReply(npc));
 	}
 
 }
