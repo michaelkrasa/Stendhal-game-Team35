@@ -193,6 +193,11 @@
 		    <attribute name="move.continuous" />
 		</portal>
 
+		<configurator class-name="games.stendhal.server.maps.deniran.ComputerScienceProfessorNPC" />
+		<configurator class-name="games.stendhal.server.maps.deniran.Student1NPC" />
+		<configurator class-name="games.stendhal.server.maps.deniran.Student2NPC" />
+		<configurator class-name="games.stendhal.server.maps.deniran.Student3NPC" />
+
 	</zone>
 
 	<zone name="0_deniran_river_e" level="0" x="499360" y="500256"

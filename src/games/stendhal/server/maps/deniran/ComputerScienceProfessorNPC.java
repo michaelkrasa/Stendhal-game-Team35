@@ -50,7 +50,7 @@ public class ComputerScienceProfessorNPC implements ZoneConfigurator {
     npc.setEntityClass("wisemannpc");
     npc.setDescription("You see Lon Jatham, a powerhouse of computery knowledge.");
     // Set the initial position to be the first node on the Path you defined above.
-    npc.setPosition(43, 56);
+    npc.setPosition(51, 83);
     npc.initHP(100);
 
     zone.add(npc);   
