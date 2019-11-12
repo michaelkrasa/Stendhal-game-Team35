@@ -9,11 +9,11 @@ import org.junit.Test;
 import games.stendhal.server.core.config.ZoneConfigurator;
 import games.stendhal.server.entity.npc.SpeakerNPC;
 import games.stendhal.server.entity.npc.fsm.Engine;
-// import correct name here :       import games.stendhal.server.maps.kalavan.citygardens.IceCreamSellerNPC;
+import games.stendhal.server.maps.deniran.ComputerScienceProfessorNPC;
 import utilities.QuestHelper;
 import utilities.ZonePlayerAndNPCTestImpl;
 /**
- * Test buying ice cream.
+ * Test Lon Jatham.
  *
  * @author Zhaoyu Zhang
  */
@@ -28,11 +28,10 @@ public class SchoolNPCTest extends ZonePlayerAndNPCTestImpl {
 		setupZone(ZONE_NAME);
 	}
 	
-	public SchoolNPCTest() {
+	public ComputerScienceProfessorNPCTest() {
 		setNpcNames("Lon Jatham");
 		setZoneForPlayer(ZONE_NAME);
-		// name of creating NPC method updating needed
-		addZoneConfigurator((ZoneConfigurator) new SchoolNPCTest(), ZONE_NAME);
+		addZoneConfigurator((ZoneConfigurator) new ComputerScienceProfessorNPCTest(), ZONE_NAME);
 	}
 	
 	/**
