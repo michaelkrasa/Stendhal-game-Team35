@@ -14,7 +14,6 @@ import games.stendhal.server.core.engine.StendhalRPZone;
 import games.stendhal.server.entity.item.behavior.MessagingUseBehavior;
 import games.stendhal.server.entity.item.behavior.UseBehavior;
 import games.stendhal.server.entity.player.Player;
-import games.stendhal.server.entity.status.StatusType;
 import games.stendhal.server.maps.MockStendlRPWorld;
 import marauroa.common.Log4J;
 import utilities.PlayerTestHelper;
@@ -84,21 +83,8 @@ public class SleepingBagTest {
 		assertTrue(player.isEquipped("Sleeping Bag"));
 	}
 	
-	//test player in sleeping status server-enitiy-status
-	@Test
-	public void testPlayerSleepingStatus(){
-		//give player a sleeping bag
-		final Item sleepingBag = ItemTestHelper.createItem("Sleeping Bag");
-		sleepingBag.setEquipableSlots(Arrays.asList("bag"));
-		player.equipToInventoryOnly(sleepingBag);
-				
-		//put to sleep --------- check this -------------
-		sleepingBag.onUsed(player);
-		
-		//checks asleep
-		assertTrue(player.hasStatus(StatusType.SLEEP));
-	}
 	
+	//test the players health regenerates when they sleep
 	@Test
 	public void testHealthRegen() {
 		//give player a sleeping bag
