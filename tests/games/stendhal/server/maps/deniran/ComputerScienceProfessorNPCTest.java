@@ -14,6 +14,7 @@ import utilities.ZonePlayerAndNPCTestImpl;
  * Test Lon Jatham.
  *
  * @author Zhaoyu Zhang
+ * @author Declan Kehoe
  */
 public class ComputerScienceProfessorNPCTest extends ZonePlayerAndNPCTestImpl {
 	
