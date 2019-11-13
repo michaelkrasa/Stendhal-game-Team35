@@ -41,7 +41,9 @@ public enum StatusType {
 	ZOMBIE(new ZombieStatusHandler()),
 
 	/** reduced movement speed */
-	HEAVY(new HeavyStatusHandler());
+	HEAVY(new HeavyStatusHandler()),
+	
+	SLEEP(new SleepStatusHandler());
 
 	/** the status handler for this StatusType */
 	private final StatusHandler<? extends Status> statusHandler;
