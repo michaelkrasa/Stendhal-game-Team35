@@ -54,9 +54,15 @@ public class SleepingBag extends Item {
 					return false;
 				}
 			}
+			/* Place the sleeping bag on the ground */
+			if(user.isEquippedItemInSlot("bag", "sleeping bag")) {
+				this.setPosition(user.getX(), user.getY());
+				getZone().add(this);
+				user.drop(this);
+			}			
 			/* Inflict the sleeping status on the player */
 			SleepStatus status = new SleepStatus();
-			user.getStatusList().inflictStatus(status, user);			
+			user.getStatusList().inflictStatus(status, user);		
 			return true;
 		} else {
 			return false;

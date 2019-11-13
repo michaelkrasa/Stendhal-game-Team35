@@ -12,33 +12,26 @@ public class SleepStatusHandler implements StatusHandler<SleepStatus>{
 	public void inflict(SleepStatus status, StatusList statusList, Entity attacker) {
 		
 		RPEntity entity = statusList.getEntity();
+		
+		/* Check that the entity exists */
 		if (entity == null) {
 			return;
 		}
 		int count = statusList.countStatusByType(status.getStatusType());
 		
 		entity.sendPrivateText(NotificationType.SCENE_SETTING, "You're sleeping.");
-		
-		if(count == 0)
-		{		
+				
+		/* Checking whether player already has a sleepign status */
+		if(count == 0) {	
 			statusList.addInternal(status);
+			//statusList.activateStatusAttribute("status_" + status.getName());
 			TurnListener listener = new SleepStatusTurnListener(statusList);
 			TurnNotifier.get().notifyInTurns(0, listener);
 		}
 	}
 
-	@Override
 	public void remove(SleepStatus status, StatusList statusList) {
 		statusList.removeInternal(status);
-/*
-		RPEntity entity = statusList.getEntity();
-		if (entity == null) {
-			return;
-		}
-
-		entity.sendPrivateText(NotificationType.SCENE_SETTING, "You are no longer sleeping.");
-		entity.remove("status_" + status.getName()); */
 		
 	}
-
 }

@@ -4,7 +4,7 @@
 
   <item name="sleeping bag">
     <type class="sleeping" subclass="sleeping_bag" tileid="-1"/>
-    <description>You see a food mill. It is the traditional tool to mill food.</description>
+    <description>You see a sleeping bag. Go get some rest, you deserve it champ.</description>
     <implementation class-name="games.stendhal.server.entity.item.SleepingBag"/>
     <attributes>
       <amount value="100"/>
