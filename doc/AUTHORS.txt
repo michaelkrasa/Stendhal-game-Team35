@@ -169,16 +169,34 @@ Authors of Stendhal are:
   · Artist (mimic, dodo, suba diving concepts)
   Declan Kehoe
   · Bugs fixer
+  · Feature adder
+  · Test writer
+  · Code reviewer
   Jack Butterfield
   · Bugs fixer
+  · Feature adder
+  · Test writer
+  · Code reviewer
   Alexandru Tentes
   · Bugs fixer
+  · Feature adder
+  · Test writer
+  · Code reviewer
   Zhaoyu Zhang
   · Bugs fixer
+  · Feature adder
+  · Test writer
+  · Code reviewer
   Alan Biju Thomas
   · Bugs fixer
+  · Feature adder
+  · Test writer
+  · Code reviewer
   Michael Krasa
   · Bugs fixer
+  · Feature adder
+  · Test writer
+  · Code reviewer
 
 We also thank many who have contributed to Stendhal by providing patches,
 which the rest of the team commited on their behalf. 

@@ -1,6 +1,12 @@
 Changelog
 ---------
 ---------
+1.32
+*feature*
+- add Deniran Institue of Technology area, Lon Jatham NPC, and 3 potential student NPCs
+- create sleeping bag item that can be placed on the floor and be equippable as well, right click on the item puts the player to sleep. Players heal while sleeping 
+- create furniture items, implement furniture placement logic, add furniture shop NPC in Deniran
+
 1.31
 *feature*
 - fishmonger in Kirdneh now buys red lion fish
