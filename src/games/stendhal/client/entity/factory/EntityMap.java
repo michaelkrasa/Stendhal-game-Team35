@@ -167,9 +167,13 @@ public final class EntityMap {
 
 		register("looped_sound_source", null, null, LoopedSoundSource.class);
 		
+        src/games/stendhal/client/entity/factory/EntityMap.java
+		register("item", "sleeping", null, Item.class);
+
 		//Adding furniture items
 		register("item", "furniture", "chair", Item.class);
 		register("item", "furniture", "stool", Item.class);
+        src/games/stendhal/client/entity/factory/EntityMap.java
 	}
 
 	/**
