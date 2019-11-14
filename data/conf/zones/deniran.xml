@@ -121,7 +121,6 @@
 			<attribute name="move.continuous" />
 		</portal>
 
-
 	</zone>
 
 
@@ -188,9 +187,18 @@
 			<parameter name="color_method">time</parameter>
 			<parameter name="weather">varying</parameter>
 		</attributes>
+		<!-- door outside -->
+		<portal x="53" y ="82" ref="school_inner_entrance">
+		    <destination zone="int_deniran_school_of_computer_science" ref="school_outter_entrance" />
+		    <attribute name="move.continuous" />
+		</portal>
+
+		<configurator class-name="games.stendhal.server.maps.deniran.ComputerScienceProfessorNPC" />
+		<configurator class-name="games.stendhal.server.maps.deniran.Student1NPC" />
+		<configurator class-name="games.stendhal.server.maps.deniran.Student2NPC" />
+		<configurator class-name="games.stendhal.server.maps.deniran.Student3NPC" />
 
 	</zone>
-
 
 	<zone name="0_deniran_river_e" level="0" x="499360" y="500256"
 		file="Level 0/deniran/deniran_river_e.tmx">
@@ -661,5 +669,14 @@
 		</portal>
 
 	</zone>
+	
+	<zone name="int_deniran_school_of_computer_science" file="interiors/semos/school_0.tmx">
+    
+        <portal x="20" y="38" ref="school_outter_entrance">
+            <destination zone="0_deniran_se" ref="school_inner_entrance" />
+			<attribute name="move.continuous" />
+        </portal>
+        
+    </zone>
 
 </zones>
