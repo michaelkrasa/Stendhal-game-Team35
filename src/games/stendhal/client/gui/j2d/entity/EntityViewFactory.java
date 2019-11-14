@@ -208,6 +208,10 @@ public class EntityViewFactory {
 		register("wall", null, null, Wall2DView.class);
 		register("walkblocker", null, null, WalkBlocker2DView.class);
 		register("well_source", null, null, UseableEntity2DView.class);
+		
+		//Adding furniture items
+		register("item", "furniture", "chair", Item2DView.class);
+		register("item", "furniture", "stool", Item2DView.class);
 	}
 
 	/**

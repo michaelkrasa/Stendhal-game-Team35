@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../items.xsd ">
+
+  <item name="chair">
+    <type class="furniture" subclass="chair" tileid="-1" />
+    <description>You see a simple chair. It might look good inside a house.</description>
+    <implementation class-name="games.stendhal.server.entity.item.Furniture" />
+    <attributes>
+      <quantity value="1" />
+      <max_quantity value="2147483647" />
+    </attributes>
+    <weight value="0.1" />
+    <value value="100" />
+    <equipable>
+      <slot name="ground" />
+      <slot name="content" />
+      <slot name="lhand" />
+      <slot name="rhand" />
+      <slot name="bag" />
+    </equipable>
+  </item>
+  
+  <item name="stool">
+    <type class="furniture" subclass="stool" tileid="-1" />
+    <description>You see a stool. It might look good inside a house.</description>
+    <implementation class-name="games.stendhal.server.entity.item.Furniture" />
+    <attributes>
+      <quantity value="1" />
+      <max_quantity value="2147483647" />
+    </attributes>
+    <weight value="0.1" />
+    <value value="100" />
+    <equipable>
+      <slot name="ground" />
+      <slot name="content" />
+      <slot name="lhand" />
+      <slot name="rhand" />
+      <slot name="bag" />
+    </equipable>
+  </item>
+
+</items>
