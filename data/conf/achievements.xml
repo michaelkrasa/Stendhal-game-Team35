@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="stendhal groups.xsd"><group
+		uri="achievements/experience" ></group><group uri="achievements/fighting" /><group
+		uri="achievements/quest" />
+	<group uri="achievements/outside_zone" /><group
+		uri="achievements/underground_zone" />
+	<group uri="achievements/interior_zone" ></group>
+	<group uri="achievements/age" ></group>
+	<group uri="achievements/item" />
+	<group uri="achievements/obtain" />
+	<group uri="achievements/friend" ></group>
+	<group uri="achievements/production" />
+	<group uri="achievements/quest_ados_items" />
+	<group uri="achievements/quest_semos_monster" />
+	<group uri="achievements/quest_kirdneh_item" />
+	<group uri="achievements/quest_mithrilbourgh_enemy_army" ></group></groups>
