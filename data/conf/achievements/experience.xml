@@ -9,7 +9,7 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>9</argument>
+		<argument value="9"></argument>
 	</condition>
 </achievement>
 
@@ -20,7 +20,7 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>49</argument>
+		<argument value="49"></argument>
 	</condition>
 </achievement>
 
@@ -31,7 +31,7 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>99</argument>
+		<argument value="99"></argument>
 	</condition>
 </achievement>
 
@@ -42,7 +42,7 @@
 	<basescore>3</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>199</argument>
+		<argument value="199"></argument>
 	</condition>
 </achievement>
 
@@ -53,7 +53,7 @@
 	<basescore>3</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>299</argument>
+		<argument value="299"></argument>
 	</condition>
 </achievement>
 
@@ -64,7 +64,7 @@
 	<basescore>3</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>399</argument>
+		<argument value="399"></argument>
 	</condition>
 </achievement>
 
@@ -75,7 +75,7 @@
 	<basescore>5</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>499</argument>
+		<argument value="499"></argument>
 	</condition>
 </achievement>
 
@@ -86,6 +86,6 @@
 	<basescore>5</basescore>
 	<active>yes</active>
 	<condition constructor="LevelGreaterThanCondition">
-		<argument>596</argument>
+		<argument value="596"></argument>
 	</condition>
 </achievement>

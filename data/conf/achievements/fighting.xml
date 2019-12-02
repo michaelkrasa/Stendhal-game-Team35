@@ -9,8 +9,8 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
-		<argument>rat</argument>
-		<argument>15</argument>
+		<argument value="rat"></argument>
+		<argument value="15"></argument>
 	</condition>
 </achievement>
 
@@ -21,16 +21,16 @@
 	<basescore>2</basescore>
 	<active>yes</active>
 	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
-		<argument>10</argument>
-		<argument>rat</argument>
-		<argument>caverat</argument>
-		<argument>razorrat</argument>
-		<argument>venomrat</argument>
-		<argument>zombie rat</argument>
-		<argument>giantrat</argument>
-		<argument>ratman</argument>
-		<argument>ratwoman</argument>
-		<argument>archrat</argument>
+		<argument value="10"></argument>
+		<argument value="rat"></argument>
+		<argument value="caverat"></argument>
+		<argument value="razorrat"></argument>
+		<argument value="venomrat"></argument>
+		<argument value="zombie rat"></argument>
+		<argument value="giantrat"></argument>
+		<argument value="ratman"></argument>
+		<argument value="ratwoman"></argument>
+		<argument value="archrat"></argument>
 	</condition>
 </achievement>
 
@@ -41,8 +41,8 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
-		<argument>deer</argument>
-		<argument>25</argument>
+		<argument value="deer"></argument>
+		<argument value="25"></argument>
 	</condition>
 </achievement>
 
@@ -53,8 +53,8 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
-		<argument>boar</argument>
-		<argument>20</argument>
+		<argument value="boar"></argument>
+		<argument value="20"></argument>
 	</condition>
 </achievement>
 
@@ -65,10 +65,10 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
-		<argument>10</argument>
-		<argument>bear</argument>
-		<argument>black bear</argument>
-		<argument>babybear</argument>
+		<argument value="10"></argument>
+		<argument value="bear"></argument>
+		<argument value="black bear"></argument>
+		<argument value="babybear"></argument>
 	</condition>
 </achievement>
 
@@ -79,8 +79,8 @@
 	<basescore>1</basescore>
 	<active>yes</active>
 	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
-		<argument>fox</argument>
-		<argument>20</argument>
+		<argument value="fox"></argument>
+		<argument value="20"></argument>
 	</condition>
 </achievement>
 
@@ -91,10 +91,10 @@
 	<basescore>2</basescore>
 	<active>yes</active>
 	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
-		<argument>10</argument>
-		<argument>ent</argument>
-		<argument>entwife</argument>
-		<argument>old ent</argument>
+		<argument value="10"></argument>
+		<argument value="ent"></argument>
+		<argument value="entwife"></argument>
+		<argument value="old ent"></argument>
 	</condition>
 </achievement>
 
