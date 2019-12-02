@@ -1,1 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<achievements xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../achievements.xsd ">
+
+<achievement identifier="fight.general.rats">
+	<title>Rat Hunter</title>
+	<category>Fighting</category>
+	<description>Kill 15 rats</description>
+	<basescore>1</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument>rat</argument>
+		<argument>15</argument>
+	</condition>
+</achievement>
+
+</achievements>
