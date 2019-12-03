@@ -1,14 +1,17 @@
 package games.stendhal.server.core.rp.achievement;
-package games.stendhal.server.core.config;
 
 import static org.junit.Assert.*;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
 import org.junit.Test;
+import org.xml.sax.SAXException;
 
+import games.stendhal.server.core.config.AchievementsXMLLoader;
 import games.stendhal.server.core.rp.achievement.factory.AbstractAchievementFactory;
 
 public class AchievementTest {
@@ -115,8 +118,9 @@ public class AchievementTest {
 	}
 	
 	@Test
-	public void testAchievementsExistXML() {
-		List<Achievement> listOfAchievements = AchievementsXMLLoader.load(/*something to load - uri*/);
+	public void testAchievementsExistXML() throws SAXException, URISyntaxException {
+		AchievementsXMLLoader achievementsXMLLoader = new AchievementsXMLLoader();
+		List<Achievement> listOfAchievements = achievementsXMLLoader.load(new URI("/data/conf/achievements.xml"));
 		Iterator<Achievement> achievementIterator = listOfAchievements.iterator();
 		assertEquals(achievementIterator.next().getTitle(), "Ados' Supporter");
 		assertEquals(achievementIterator.next().getTitle(), "Ados' Provider");
