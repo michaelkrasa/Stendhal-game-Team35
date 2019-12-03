@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<achievements>	
+	<achievement identifier="xp.level.010">
+		<title>Greehorn</title>
+		<category>Experience</category>
+		<description>Reach level 10</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="9"></argument>
+		</condition>
+	</achievement>
+ 
+ 	<achievement identifier="fight.general.deer">
+		<title>Deer Hunter</title>
+		<category>Fighting</category>
+		<description>Kill 25 deer</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+			<argument value="deer"></argument>
+			<argument value="25"></argument>
+		</condition>
+	</achievement>
+			
+</achievements>
