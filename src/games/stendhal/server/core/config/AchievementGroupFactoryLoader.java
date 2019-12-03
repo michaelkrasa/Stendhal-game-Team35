@@ -1,20 +1,16 @@
 package games.stendhal.server.core.config;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.LinkedList;
 import java.util.List;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-
 import org.apache.log4j.Logger;
-//import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import games.stendhal.server.core.rule.defaultruleset.DefaultAchievement;
 
 /**
  * Loads a group of achievements from an xml file.
@@ -28,39 +24,38 @@ class AchievementGroupFactoryLoader extends DefaultHandler
 
 	protected LinkedList<URI> groups;
 
-	public AchievementGroupFactoryLoader(final URI uri) {
-		this.uri = uri;
-	}
-
-	public List<URI> load() throws SAXException, IOException {
-		final InputStream in = getClass().getResourceAsStream(uri.getPath());
-
-		if (in == null) {
-			throw new FileNotFoundException("Cannot find resource: "
-					+ uri.getPath());
-		}
-
+	public AchievementGroupFactoryLoader(final String uri) {
 		try {
-			return load(in);
-		} finally {
-			in.close();
+			this.uri = new URI(uri);
+		} catch (URISyntaxException e) {
+			logger.error(e, e);
 		}
 	}
 
-	protected List<URI> load(final InputStream in) throws SAXException, IOException {
-		SAXParser saxParser;
-
-		// Use the default (non-validating) parser
-		final SAXParserFactory factory = SAXParserFactory.newInstance();
+	public List<DefaultAchievement> load() throws SAXException, IOException {
+		final GroupsXMLLoader groupsLoader = new GroupsXMLLoader(uri);
+		final List<DefaultAchievement> list = new LinkedList<DefaultAchievement>();
+		
+		
 		try {
-			saxParser = factory.newSAXParser();
-		} catch (final ParserConfigurationException ex) {
-			throw new SAXException(ex);
+			List<URI> groups = groupsLoader.load();
+
+			// Load each group
+			for (final URI tempUri : groups) {
+				final AchievementsXMLLoader loader = new AchievementsXMLLoader();
+
+				try {
+					list.addAll(loader.load(tempUri));
+				} catch (final SAXException ex) {
+					logger.error("Error loading creature group: " + tempUri, ex);
+				}
+			}
+		} catch (SAXException e) {
+			logger.error(e, e);
+		} catch (IOException e) {
+			logger.error(e, e);
 		}
 
-		// Parse the XML
-		groups = new LinkedList<URI>();
-		saxParser.parse(in, this);
-		return groups;
+		return list;
 	}
 }
