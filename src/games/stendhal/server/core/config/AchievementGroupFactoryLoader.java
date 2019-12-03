@@ -10,13 +10,13 @@ import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import games.stendhal.server.core.rule.defaultruleset.DefaultAchievement;
+import games.stendhal.server.core.rp.achievement.*;
 
 /**
  * Loads a group of achievements from an xml file.
  */
 
-class AchievementGroupFactoryLoader extends DefaultHandler
+public class AchievementGroupFactoryLoader extends DefaultHandler
 {
 	private static final Logger logger = Logger.getLogger(AchievementGroupFactoryLoader.class);
 
@@ -32,9 +32,9 @@ class AchievementGroupFactoryLoader extends DefaultHandler
 		}
 	}
 
-	public List<DefaultAchievement> load() throws SAXException, IOException {
+	public List<Achievement> load() throws SAXException, IOException {
 		final GroupsXMLLoader groupsLoader = new GroupsXMLLoader(uri);
-		final List<DefaultAchievement> list = new LinkedList<DefaultAchievement>();
+		final List<Achievement> list = new LinkedList<Achievement>();
 		
 		
 		try {
