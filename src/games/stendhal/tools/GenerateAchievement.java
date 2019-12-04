@@ -1,22 +1,27 @@
 package games.stendhal.tools;
 
-//import java.net.URI;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 import games.stendhal.server.core.config.AchievementGroupFactoryLoader;
-//import games.stendhal.server.core.rule.defaultruleset.DefaultCreature;
-//import games.stendhal.server.core.rule.defaultruleset.DefaultItem;
 import games.stendhal.server.core.rp.achievement.*;
-//import games.stendhal.server.entity.creature.impl.DropItem;
 
 public class GenerateAchievement{
 	public static void generateAchievement() throws Exception{
+		/*
+		 *  Wait the uri of xmls to test since we haven't merge the whole thing
+		 */
 		final AchievementGroupFactoryLoader loader =
 				 new AchievementGroupFactoryLoader("the url of xml files written by teammates");
 		final List<Achievement> achievements = loader.load();
 		
+		/*
+		 *  When we load the achievements, we use sort() function to sort them
+		 *  based on the difficulties of them (which is base score of completing them)
+		 *  and can be changed to other functions like getTitle() or getType() etc
+		 *  if we want another way of ordering
+		 */
 		Collections.sort(achievements, new Comparator<Achievement>() {
 
 			@Override
@@ -31,6 +36,9 @@ public class GenerateAchievement{
 		
 	}
 	
+	/*
+	 *  The main function that calls the group loader
+	 */
 	public static void main(final String[] args) throws Exception {
 		generateAchievement();
 	}
