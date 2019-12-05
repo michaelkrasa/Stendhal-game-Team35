@@ -50,6 +50,7 @@
 			<argument value="0"/>
 			<argument value="100000"/>
 		</condition>
+	</achievement>
 
 	<achievement identifier="quest.special.semos">
 		<title>Aide to Semos folk</title>
@@ -60,6 +61,7 @@
 		<condition constructor="QuestsInRegionCompletedCondition">
 			<argument value="Region.SEMOS_CITY"/>
 		</condition>
+	</achievement>
 
 	<achievement identifier="quest.special.ados">
 		<title>Helper of Ados city dwellers</title>
@@ -70,6 +72,7 @@
 		<condition constructor="QuestsInRegionCompletedCondition">
 			<argument value="Region.ADOS_CITY"/>
 		</condition>
+	</achievement>
 
 	<achievement identifier="quest.count.80">
 		<title>Quest Junkiw</title>
@@ -80,4 +83,5 @@
 		<condition constructor="QuestCountCompletedCondition">
 			<argument value="80"/>
 		</condition>
+	</achievement>
 </achievements>
