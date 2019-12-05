@@ -123,6 +123,8 @@ public class AchievementTest {
 		AchievementsXMLLoader achievementsXMLLoader = new AchievementsXMLLoader();
 		List<Achievement> listOfAchievements = achievementsXMLLoader.load(uri);
 		Iterator<Achievement> achievementIterator = listOfAchievements.iterator();
+		
+		//less files as not all are implemented in xml
 		assertEquals(achievementIterator.next().getTitle(), "Greenhorn");
 		assertEquals(achievementIterator.next().getTitle(), "Novice");
 		assertEquals(achievementIterator.next().getTitle(), "Apprentice");
