@@ -1,1 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<achievements xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../achievements.xsd ">
+	
+	<achievement identifier="zone.outside.semos">
+		<title>Junior Explorer</title>
+		<category>Outside Zone</category>
+		<description>Visit all outside zones in the Semos region</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesInRegionCondition">
+			<argument value="semos"></argument>
+			<argument value="yes"></argument>
+			<argument value="yes"></argument>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="zone.outside.ados">
+		<title>Big City Explorer</title>
+		<category>Outside Zone</category>
+		<description>Visit all outside zones in the Ados region</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesInRegionCondition">
+			<argument value="ados"></argument>
+			<argument value="yes"></argument>
+			<argument value="yes"></argument>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="zone.outside.fado">
+		<title>Far South</title>
+		<category>Outside Zone</category>
+		<description>Visit all outside zones in the Fado region</description>
+		<basescore>2</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesInRegionCondition">
+			<argument value="fado"></argument>
+			<argument value="yes"></argument>
+			<argument value="yes"></argument>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="zone.outside.orril">
+		<title>Scout</title>
+		<category>Outside Zone</category>
+		<description>Visit all outside zones in the Orril region</description>
+		<basescore>2</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesInRegionCondition">
+			<argument value="orril"></argument>
+			<argument value="yes"></argument>
+			<argument value="yes"></argument>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="zone.outside.amazon">
+		<title>Jungle Explorer</title>
+		<category>Outside Zone</category>
+		<description>Visit all outside zones in the Amazon region</description>
+		<basescore>5</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesInRegionCondition">
+			<argument value="amazon"></argument>
+			<argument value="yes"></argument>
+			<argument value="yes"></argument>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="zone.outside.athor">
+		<title>Tourist</title>
+		<category>Outside Zone</category>
+		<description>Visit all outside zones in the Athor region</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesInRegionCondition">
+			<argument value="athor"></argument>
+			<argument value="yes"></argument>
+			<argument value="yes"></argument>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="zone.outside.kikareukin">
+		<title>Sky Tower</title>
+		<category>Outside Zone</category>
+		<description>Visit all outside zones in the Kikareukin region</description>
+		<basescore>5</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesInRegionCondition">
+			<argument value="kikareukin"></argument>
+			<argument value="yes"></argument>
+			<argument value="yes"></argument>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="zone.special.bank">
+		<title>Safe Deposit</title>
+		<category>Outside Zone</category>
+		<description>Visit all banks</description>
+		<basescore>2</basescore>
+		<active>yes</active>
+		<condition constructor="PlayerVisitedZonesCondition">
+			<argument value="int_semos_bank"></argument>
+			<argument value="int_nalwor_bank"></argument>
+			<argument value="int_kirdneh_bank"></argument>
+			<argument value="int_fado_bank"></argument>
+			<argument value="int_magic_bank"></argument>
+			<argument value="int_ados_bank"></argument>
+		</condition>
+	</achievement>
+
+</achievements>
