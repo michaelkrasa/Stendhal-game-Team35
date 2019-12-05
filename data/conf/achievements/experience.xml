@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <achievements xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="stendhal ../achievements.xsd ">
 	<achievement identifier="xp.level.010">
-		<title>Greehorn</title>
+		<title>Greenhorn</title>
 		<category>Experience</category>
 		<description>Reach level 10</description>
 		<basescore>1</basescore>
