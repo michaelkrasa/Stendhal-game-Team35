@@ -1,6 +1,11 @@
 Changelog
 ---------
 ---------
+1.33
+*refactoring*
+- create XSD and XML for achievements, XMLS for achievement factories for experience, fighting, quest, outside zone
+- created XML achievement loader and group achievement loader
+
 1.32
 *feature*
 - add Deniran Institue of Technology area, Lon Jatham NPC, and 3 potential student NPCs

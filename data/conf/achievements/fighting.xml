@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<achievements xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="stendhal ../achievements.xsd ">
+
+<achievement identifier="fight.general.rats">
+	<title>Rat Hunter</title>
+	<category>Fighting</category>
+	<description>Kill 15 rats</description>
+	<basescore>1</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument value="rat"></argument>
+		<argument value="15"></argument>
+	</condition>
+</achievement>
+
+<achievement identifier="fight.general.exterminator">
+	<title>Exterminator</title>
+	<category>Fighting</category>
+	<description>Kill 10 rats of each kind</description>
+	<basescore>2</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument value="10"></argument>
+		<argument value="rat"></argument>
+		<argument value="caverat"></argument>
+		<argument value="razorrat"></argument>
+		<argument value="venomrat"></argument>
+		<argument value="zombie rat"></argument>
+		<argument value="giantrat"></argument>
+		<argument value="ratman"></argument>
+		<argument value="ratwoman"></argument>
+		<argument value="archrat"></argument>
+	</condition>
+</achievement>
+
+<achievement identifier="fight.general.deer">
+	<title>Deer Hunter</title>
+	<category>Fighting</category>
+	<description>Kill 25 deer</description>
+	<basescore>1</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument value="deer"></argument>
+		<argument value="25"></argument>
+	</condition>
+</achievement>
+
+<achievement identifier="fight.general.boars">
+	<title>Boar Hunter</title>
+	<category>Fighting</category>
+	<description>Kill 20 boar</description>
+	<basescore>1</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument value="boar"></argument>
+		<argument value="20"></argument>
+	</condition>
+</achievement>
+
+<achievement identifier="fight.general.bears">
+	<title>Bear Hunter</title>
+	<category>Fighting</category>
+	<description>Kill 10 black bears, 10 bears and 10 babybears</description>
+	<basescore>1</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument value="10"></argument>
+		<argument value="bear"></argument>
+		<argument value="black bear"></argument>
+		<argument value="babybear"></argument>
+	</condition>
+</achievement>
+
+<achievement identifier="fight.general.foxes">
+	<title>Fox Hunter</title>
+	<category>Fighting</category>
+	<description>Kill 20 foxes</description>
+	<basescore>1</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument value="fox"></argument>
+		<argument value="20"></argument>
+	</condition>
+</achievement>
+
+<achievement identifier="fight.general.ents">
+	<title>Wood Cutter</title>
+	<category>Fighting</category>
+	<description>Kill 10 ents, 10 entwifes and 10 old ents</description>
+	<basescore>2</basescore>
+	<active>yes</active>
+	<condition constructor="PlayerHasKilledNumberOfCreaturesCondition">
+		<argument value="10"></argument>
+		<argument value="ent"></argument>
+		<argument value="entwife"></argument>
+		<argument value="old ent"></argument>
+	</condition>
+</achievement>
+
+<achievement identifier="fight.special.rare">
+	<title>Poacher</title>
+	<category>Fighting</category>
+	<description>Kill any rare creature</description>
+	<basescore>5</basescore>
+	<active>yes</active>
+	<condition constructor="KilledRareCreatureCondition"></condition>
+</achievement>
+
+<achievement identifier="fight.special.all">
+	<title>Legend</title>
+	<category>Fighting</category>
+	<description>Kill all creatures solo</description>
+	<basescore>5</basescore>
+	<active>yes</active>
+	<condition constructor="KilledSoloAllCreaturesCondition"></condition>
+</achievement>
+
+<achievement identifier="fight.special.allshared">
+	<title>Team Player</title>
+	<category>Fighting</category>
+	<description>Kill all creatures in a team</description>
+	<basescore>5</basescore>
+	<active>yes</active>
+	<condition constructor="KilledSharedAllCreaturesCondition"></condition>
+</achievement>
+
+</achievements>

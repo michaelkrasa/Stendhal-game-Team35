@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<achievements xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="stendhal ../achievements.xsd ">
+	<achievement identifier="quest.special.elf_princess.0025">
+		<title>Faiumoni's Casanova</title>
+		<category>Quest</category>
+		<description>Finish elf princess quest 25 times</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="QuestStateGreaterThanCondition">
+			<argument value="elf_princess"/>
+			<argument value="2"/>
+			<argument value="24"/>
+		</condition>
+	</achievement>
+
+	<achievement identifier="quest.special.kill_monks.0025">
+		<title>Heretic</title>
+		<category>Quest</category>
+		<description>Finish Kill Monks quest 25 times</description>
+		<basescore>5</basescore>
+		<active>yes</active>
+		<condition constructor="QuestStateGreaterThanCondition">
+			<argument value="kill_monks"/>
+			<argument value="2"/>
+			<argument value="24"/>
+		</condition>
+	</achievement>
+
+	<achievement identifier="quest.special.maze">
+		<title>Pathfinder</title>
+		<category>Quest</category>
+		<description>Finish the maze</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="QuestStateGreaterThanCondition">
+			<argument value="maze"/>
+			<argument value="2"/>
+			<argument value="0"/>
+		</condition>
+	</achievement>
+
+	<achievement identifier="quest.deathmatch">
+		<title>Deathmatch Hero</title>
+		<category>Quest</category>
+		<description>Earn 100,000 points in deathmatch</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="QuestStateGreaterThanCondition">
+			<argument value="deathmatch_score"/>
+			<argument value="0"/>
+			<argument value="100000"/>
+		</condition>
+
+	<achievement identifier="quest.special.semos">
+		<title>Aide to Semos folk</title>
+		<category>Quest</category>
+		<description>Complete all quests in Semos City</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="QuestsInRegionCompletedCondition">
+			<argument value="Region.SEMOS_CITY"/>
+		</condition>
+
+	<achievement identifier="quest.special.ados">
+		<title>Helper of Ados city dwellers</title>
+		<category>Quest</category>
+		<description>Complete all quests in Ados City</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="QuestsInRegionCompletedCondition">
+			<argument value="Region.ADOS_CITY"/>
+		</condition>
+
+	<achievement identifier="quest.count.80">
+		<title>Quest Junkiw</title>
+		<category>Quest</category>
+		<description>Complete at least 80 quests</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="QuestCountCompletedCondition">
+			<argument value="80"/>
+		</condition>
+</achievements>

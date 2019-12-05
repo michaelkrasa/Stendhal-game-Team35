@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<achievements xmlns="stendhal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="stendhal ../achievements.xsd ">
+	<achievement identifier="xp.level.010">
+		<title>Greenhorn</title>
+		<category>Experience</category>
+		<description>Reach level 10</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="9"/>
+		</condition>
+	</achievement>
+
+	<achievement identifier="xp.level.050">
+		<title>Novice</title>
+		<category>Experience</category>
+		<description>Reach level 50</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="49"/>
+		</condition>
+	</achievement>
+
+	<achievement identifier="xp.level.100">
+		<title>Apprentice</title>
+		<category>Experience</category>
+		<description>Reach level 100</description>
+		<basescore>1</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="99"/>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="xp.level.200">
+		<title>Adventurer</title>
+		<category>Experience</category>
+		<description>Reach level 200</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="199"/>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="xp.level.300">
+		<title>Experienced Adventurer</title>
+		<category>Experience</category>
+		<description>Reach level 300</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="299"/>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="xp.level.400">
+		<title>Master Adventurer</title>
+		<category>Experience</category>
+		<description>Reach level 400</description>
+		<basescore>3</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="399"/>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="xp.level.500">
+		<title>Stendhal Master</title>
+		<category>Experience</category>
+		<description>Reach level 500</description>
+		<basescore>5</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="499"/>
+		</condition>
+	</achievement>
+	
+	<achievement identifier="xp.level.597">
+		<title>Stendhal High Master</title>
+		<category>Experience</category>
+		<description>Reach level 597</description>
+		<basescore>5</basescore>
+		<active>yes</active>
+		<condition constructor="LevelGreaterThanCondition">
+			<argument value="596"/>
+		</condition>
+	</achievement>
+</achievements>

@@ -172,31 +172,37 @@ Authors of Stendhal are:
   · Feature adder
   · Test writer
   · Code reviewer
+  · Software refactorer
   Jack Butterfield
   · Bugs fixer
   · Feature adder
   · Test writer
   · Code reviewer
+  · Software refactorer
   Alexandru Tentes
   · Bugs fixer
   · Feature adder
   · Test writer
   · Code reviewer
+  · Software refactorer
   Zhaoyu Zhang
   · Bugs fixer
   · Feature adder
   · Test writer
   · Code reviewer
+  · Software refactorer
   Alan Biju Thomas
   · Bugs fixer
   · Feature adder
   · Test writer
   · Code reviewer
+  · Software refactorer
   Michael Krasa
   · Bugs fixer
   · Feature adder
   · Test writer
   · Code reviewer
+  · Software refactorer
 
 We also thank many who have contributed to Stendhal by providing patches,
 which the rest of the team commited on their behalf. 
